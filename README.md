@@ -4,6 +4,14 @@
 ```
 cd /publicfs/cms/user/yanghz416/PocketCoffea
 ```
+Make job.sh
+```
+ls -l job.sh
+
+###if you see: "-rw-r--r-- 1 jiangxw u07 85 Aug 29 18:23 job.sh" ,then you need use 
+
+chmod +x job.sh
+```
 #proxy
 ```
 export X509_USER_PROXY="/publicfs/cms/user/yanghz416/PocketCoffea/x509up_u23240"
