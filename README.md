@@ -1,3 +1,5 @@
+\href{http://afsapply.ihep.ac.cn/cchelp/zh/local-cluster/jobs/HTCondor/}{http://afsapply.ihep.ac.cn/cchelp/zh/local-cluster/jobs/HTCondor/}
+
 ```
 cd /publicfs/cms/user/yanghz416/PocketCoffea
 ```
@@ -22,7 +24,7 @@ kinit
 klist -c "$KRB5CCNAME"  #klist -c "FILE:${XDG_RUNTIME_DIR}/krb5cc"
 ls -ld  ${XDG_RUNTIME_DIR}
 ```
-#submet ihep_condor 
+#submit ihep condor job
 ```
 export PATH=/afs/ihep.ac.cn/soft/common/sysgroup/hep_job/bin:$PATH
 hep_sub -g cms   -os SL7 -mem 3000 -np 1  -argu "-f --use-ssl"  -o /publicfs/cms/user/yanghz416/PocketCoffea/  -e /publicfs/cms/user/yanghz416/PocketCoffea/job_test.err  ./job_ST.sh  #set -s 1  in job.sh
