@@ -1,12 +1,12 @@
 ```
 cd /publicfs/cms/user/yanghz416/PocketCoffea
-
+```
 #proxy
-
+```
 export X509_USER_PROXY="/publicfs/cms/user/yanghz416/PocketCoffea/x509up_u23240"
-
+```
 #set kerberos path(设置 Kerberos 凭据缓存路径)
-
+```
 export XDG_RUNTIME_DIR="/publicfs/cms/user/yanghz416/PocketCoffea"
 
 mkdir -p "$XDG_RUNTIME_DIR"
@@ -21,9 +21,9 @@ kinit
 
 klist -c "$KRB5CCNAME"  #klist -c "FILE:${XDG_RUNTIME_DIR}/krb5cc"
 ls -ld  ${XDG_RUNTIME_DIR}
-
-#hep_condor
-
+```
+#submet ihep_condor 
+```
 export PATH=/afs/ihep.ac.cn/soft/common/sysgroup/hep_job/bin:$PATH
 hep_sub -g cms   -os SL7 -mem 3000 -np 1  -argu "-f --use-ssl"  -o /publicfs/cms/user/yanghz416/PocketCoffea/  -e /publicfs/cms/user/yanghz416/PocketCoffea/job_test.err  ./job_ST.sh  #set -s 1  in job.sh
 
