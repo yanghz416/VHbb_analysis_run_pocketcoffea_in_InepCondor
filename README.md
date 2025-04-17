@@ -1,5 +1,5 @@
-\href{http://afsapply.ihep.ac.cn/cchelp/zh/local-cluster/jobs/HTCondor/}{http://afsapply.ihep.ac.cn/cchelp/zh/local-cluster/jobs/HTCondor/}
 
+[their installation instructions](http://afsapply.ihep.ac.cn/cchelp/zh/local-cluster/jobs/HTCondor/)
 ```
 cd /publicfs/cms/user/yanghz416/PocketCoffea
 ```
