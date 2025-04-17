@@ -36,7 +36,7 @@ ls -ld  ${XDG_RUNTIME_DIR}
 Submit ihep condor job
 ```
 export PATH=/afs/ihep.ac.cn/soft/common/sysgroup/hep_job/bin:$PATH
-hep_sub -g cms   -os SL7 -mem 3000 -np 1  -argu "-f --use-ssl"  -o /publicfs/cms/user/yanghz416/PocketCoffea/  -e /publicfs/cms/user/yanghz416/PocketCoffea/job_test.err  ./job_ST.sh  #set -s 1  in job.sh
+hep_sub -g cms   -os SL7 -mem 4000 -np 2  -argu "-f --use-ssl"  -o /publicfs/cms/user/yanghz416/PocketCoffea/  -e /publicfs/cms/user/yanghz416/PocketCoffea/job_test.err  ./job_ST.sh  #set -s 1  in job.sh
 
 hep_q -u
 ```
